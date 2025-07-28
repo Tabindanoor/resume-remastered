@@ -8,31 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 10% 15%;
+    --background: 210 20% 98%;
+    --foreground: 210 25% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 10% 15%;
+    --card-foreground: 210 25% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 10% 15%;
+    --popover-foreground: 210 25% 8%;
 
-    --primary: 220 85% 20%;
+    --primary: 210 90% 25%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 20% 90%;
-    --secondary-foreground: 220 85% 20%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 210 90% 25%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 30% 94%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 38 85% 55%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(220 85% 20%), hsl(220 70% 30%));
-    --section-gradient: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 20% 98%));
-    --card-shadow: 0 4px 12px hsl(220 20% 80% / 0.15);
-    --hero-shadow: 0 20px 40px hsl(220 85% 20% / 0.3);
+    --academic-blue: 210 90% 25%;
+    --academic-gold: 25 95% 53%;
+    --warm-gray: 210 10% 93%;
+    
+    --hero-gradient: linear-gradient(135deg, hsl(210 90% 25%), hsl(210 80% 35%), hsl(25 95% 53%));
+    --section-gradient: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 30% 96%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --accent-gradient: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 90% 58%));
+    
+    --card-shadow: 0 8px 30px hsl(210 90% 25% / 0.08);
+    --hero-shadow: 0 25px 50px hsl(210 90% 25% / 0.15);
+    --elegant-shadow: 0 4px 20px hsl(210 90% 25% / 0.1);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;

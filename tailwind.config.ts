@@ -70,11 +70,14 @@ export default {
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--hero-gradient)',
-				'section-gradient': 'var(--section-gradient)'
+				'section-gradient': 'var(--section-gradient)',
+				'card-gradient': 'var(--card-gradient)',
+				'accent-gradient': 'var(--accent-gradient)'
 			},
 			boxShadow: {
 				'card': 'var(--card-shadow)',
-				'hero': 'var(--hero-shadow)'
+				'hero': 'var(--hero-shadow)',
+				'elegant': 'var(--elegant-shadow)'
 			},
 			keyframes: {
 				'accordion-down': {
