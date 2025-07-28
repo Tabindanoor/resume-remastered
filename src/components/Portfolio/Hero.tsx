@@ -3,59 +3,92 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 bg-subtle-gradient"></div>
+    <section className="relative min-h-screen bg-gradient-to-br from-background via-secondary to-muted">
+      {/* Grid Pattern Background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(210_40%_94%_/_0.3)_1px,transparent_1px),linear-gradient(to_bottom,hsl(210_40%_94%_/_0.3)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
       
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="bg-card rounded-2xl p-12 md:p-16 shadow-hero border border-muted">
-          {/* Professional badge */}
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-8">
-            <div className="w-2 h-2 bg-primary rounded-full"></div>
-            <span className="text-primary font-medium text-sm">Physics Educator</span>
+      <div className="relative z-10 container mx-auto px-6 py-20 flex items-center min-h-screen">
+        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+          
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-3 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <span className="text-primary font-medium text-sm">Professional Educator</span>
+              </div>
+              
+              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+                Muhammad Azeem
+                <span className="block text-primary">Iqbal</span>
+              </h1>
+              
+              <h2 className="text-xl lg:text-2xl text-muted-foreground font-medium">
+                M.Phil Physics • Senior Lecturer • Researcher
+              </h2>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+                Transforming physics education with 9+ years of teaching excellence and 
+                cutting-edge research in nanomaterials and ferrites.
+              </p>
+            </div>
+            
+            <div className="flex flex-wrap gap-4">
+              <Button 
+                size="lg" 
+                className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 text-base font-semibold rounded-xl shadow-card hover:shadow-hero transition-all duration-300"
+              >
+                View My Work
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-base font-semibold rounded-xl transition-all duration-300"
+              >
+                Download CV
+              </Button>
+            </div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Muhammad Azeem Iqbal
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-primary font-semibold mb-8">
-            M.Phil Physics • Teaching Excellence
-          </h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
-            Dedicated physics educator with 9+ years of teaching experience and M.Phil qualification, 
-            passionate about advancing physics education and conducting research in nanomaterials.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm">
-            <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-lg">
-              <Mail className="w-4 h-4 text-primary" />
-              <span className="text-foreground">Azeemazeemi7861@gmail.com</span>
-            </div>
-            <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-lg">
-              <Phone className="w-4 h-4 text-primary" />
-              <span className="text-foreground">+92-345-7775106</span>
-            </div>
-            <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-lg">
-              <MapPin className="w-4 h-4 text-primary" />
-              <span className="text-foreground">Faisalabad, Pakistan</span>
+          {/* Right Content - Contact Card */}
+          <div className="lg:justify-self-end">
+            <div className="bg-card rounded-2xl p-8 shadow-hero border border-muted max-w-md">
+              <h3 className="text-xl font-semibold text-foreground mb-6">Get In Touch</h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 p-3 bg-muted/50 rounded-lg">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className="text-sm font-medium text-foreground">Azeemazeemi7861@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 p-3 bg-muted/50 rounded-lg">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Phone</p>
+                    <p className="text-sm font-medium text-foreground">+92-345-7775106</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-4 p-3 bg-muted/50 rounded-lg">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Location</p>
+                    <p className="text-sm font-medium text-foreground">Faisalabad, Pakistan</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105"
-            >
-              View Experience
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all duration-300"
-            >
-              Download CV
-            </Button>
-          </div>
         </div>
       </div>
     </section>
