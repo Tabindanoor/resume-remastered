@@ -24,10 +24,19 @@ const About = () => {
                   <div className="text-3xl font-bold text-primary mb-2">9+</div>
                   <div className="text-sm font-semibold text-muted-foreground">Years Teaching</div>
                 </div>
-                <div className="text-center p-6 bg-muted rounded-xl">
+                 <div className="text-center p-4 sm:p-6 bg-muted rounded-xl w-full max-w-xs mx-auto">
+                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">
+                    M.Phil
+                  </div>
+                  <div className="text-sm sm:text-base font-semibold text-muted-foreground">
+                    Physics
+                  </div>
+                </div>
+
+                {/* <div className="text-center p-6 bg-muted rounded-xl">
                   <div className="text-3xl font-bold text-primary mb-2">M.Phil</div>
                   <div className="text-sm font-semibold text-muted-foreground">Physics</div>
-                </div>
+                </div> */}
               </div>
             </div>
             
