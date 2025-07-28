@@ -45,35 +45,33 @@ const Education = () => {
     <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Education</h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Education</h2>
+          <div className="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Academic journey spanning over a decade, from foundational studies to advanced research in Physics
           </p>
         </div>
-        
+
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-accent/30 hidden md:block"></div>
-          
-          <div className="space-y-8">
+
+          <div className="space-y-10">
             {educationData.map((edu, index) => (
-              <div key={index} className="relative flex items-start gap-6">
-                {/* Timeline dot */}
-                <div className="hidden md:flex w-16 h-16 bg-accent rounded-full items-center justify-center shadow-lg relative z-10">
-                  <GraduationCap className="w-8 h-8 text-accent-foreground" />
+              <div key={index} className="relative flex items-start gap-6 md:pl-20">
+                <div className="hidden md:flex w-14 h-14 bg-accent rounded-full items-center justify-center shadow-md relative z-10">
+                  <GraduationCap className="w-6 h-6 text-accent-foreground" />
                 </div>
-                
-                <Card className="flex-1 bg-card shadow-card border-0 p-6 hover:shadow-xl transition-shadow duration-300">
+
+                <Card className="flex-1 bg-card border border-border p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
+                      <div className="flex items-center gap-3 mb-2 flex-wrap">
                         <span className="px-3 py-1 bg-accent/10 text-accent font-semibold text-sm rounded-full">
                           {edu.type}
                         </span>
-                        <span className="text-2xl font-bold text-accent">{edu.year}</span>
+                        <span className="text-xl font-bold text-accent">{edu.year}</span>
                       </div>
-                      <h3 className="text-xl font-bold text-primary mb-2">{edu.degree}</h3>
+                      <h3 className="text-xl font-bold text-primary mb-1">{edu.degree}</h3>
                       <p className="text-muted-foreground">{edu.institution}</p>
                     </div>
                   </div>

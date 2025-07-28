@@ -34,7 +34,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 bg-section-gradient">
+    <section className="py-20 bg-section-gradient"  id="experience" >
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Teaching Experience</h2>

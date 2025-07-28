@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             Ready to discuss physics education opportunities, research collaborations, or academic partnerships
           </p>
@@ -19,38 +19,38 @@ const Contact = () => {
             <h3 className="text-3xl font-bold mb-8">Contact Information</h3>
             
             <div className="space-y-6">
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-6">
+              <Card className="bg-blue-300 backdrop-blur-sm border-white/20 p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
                     <Mail className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold text-primary-foreground/80 text-sm">Email Address</div>
+                    <div className="font-semibold  text-sm">Email Address</div>
                     <div className="text-lg font-medium">Azeemazeemi7861@gmail.com</div>
                   </div>
                 </div>
               </Card>
               
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-6">
+              <Card className="bg-blue-300 backdrop-blur-sm border-white/20 p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
                     <Phone className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold text-primary-foreground/80 text-sm">Phone Numbers</div>
+                    <div className="font-semibold  text-sm">Phone Numbers</div>
                     <div className="text-lg font-medium">+92-345-7775106</div>
                     <div className="text-md">+92-300-0987336</div>
                   </div>
                 </div>
               </Card>
               
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-6">
+              <Card className="bg-blue-300 backdrop-blur-sm border-white/20 p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <div className="font-semibold text-primary-foreground/80 text-sm">Location</div>
+                    <div className="font-semibold text-sm">Location</div>
                     <div className="text-lg font-medium">Faisalabad, Pakistan</div>
                   </div>
                 </div>
@@ -68,22 +68,42 @@ const Contact = () => {
               </p>
               
               <div className="space-y-4">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Send Message
-                </Button>
+                            <a href="mailto:Azeemazeemi7861@gmail.com">
+              <Button 
+                size="lg" 
+                className="w-full border-2 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Send Message
+              </Button>
+            </a>
+
                 
-                <Button 
+                                <a 
+                  href="/prof azeem cv.pdf" 
+                  download 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="w-full mt-4 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-base font-semibold rounded-xl transition-all duration-300
+                    w-full border-primary-foreground/30 text--foreground hover:border-white hover:bg-blue-400 hover:text-black"
+                  >
+                <Download className="w-5 h-5 mr-2" />
+                    Download CV
+                  </Button>
+                </a>
+
+                {/* <Button 
                   variant="outline" 
                   size="lg"
                   className="w-full border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 >
                   <Download className="w-5 h-5 mr-2" />
                   Download Full CV
-                </Button>
+                </Button> */}
               </div>
             </Card>
           </div>
