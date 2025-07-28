@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Grid Pattern Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(210_40%_94%_/_0.3)_1px,transparent_1px),linear-gradient(to_bottom,hsl(210_40%_94%_/_0.3)_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
       
-      <div className="relative z-10 container mx-auto px-6 py-20 flex items-center min-h-screen">
+      <div className="relative z-10 container mx-auto px-3 sm:px-6 py-20 flex items-center min-h-screen">
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           
           {/* Left Content */}
@@ -92,7 +92,7 @@ const Hero = () => {
             {/* Optional profile image */}
             {/* <img src="/profile.jpg" alt="Muhammad Azeem Iqbal" className="w-full max-w-xs rounded-2xl mb-8 shadow-md" /> */}
             
-            <div className="bg-card rounded-2xl p-8 shadow-hero border border-muted max-w-md">
+            <div className="bg-card rounded-2xl p-4  sm:p-8 shadow-hero border border-muted max-w-md">
               <h3 className="text-xl font-semibold text-foreground mb-6">Get In Touch</h3>
 
               <div className="space-y-4">
