@@ -72,12 +72,12 @@ export default {
 				'hero-gradient': 'var(--hero-gradient)',
 				'section-gradient': 'var(--section-gradient)',
 				'card-gradient': 'var(--card-gradient)',
-				'accent-gradient': 'var(--accent-gradient)'
+				'subtle-gradient': 'var(--subtle-gradient)'
 			},
 			boxShadow: {
 				'card': 'var(--card-shadow)',
 				'hero': 'var(--hero-shadow)',
-				'elegant': 'var(--elegant-shadow)'
+				'subtle': 'var(--subtle-shadow)'
 			},
 			keyframes: {
 				'accordion-down': {
